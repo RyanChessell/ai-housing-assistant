@@ -22,6 +22,10 @@ def main():
     result = communicate(form)
     print("\n📤 Communicator says:", result)
 
+    print("\n🔍 Researcher found these resources:")
+    for item in resources['top_results']:
+        print(f"- {item['title']} → {item['link']}")
+
 if __name__ == "__main__":
     main()
 
